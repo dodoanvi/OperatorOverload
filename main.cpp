@@ -6,10 +6,10 @@ using namespace std;
 
 void printPP(const PersegiPanjang &pp)
 {
-    cout << "x min     : " << pp[0] << endl;
-    cout << "x max     : " << pp[1] << endl;
-    cout << "y min     : " << pp[2] << endl;
-    cout << "y max     : " << pp[3] << endl;
+    cout << "x minimum     : " << pp[0] << endl;
+    cout << "x maximum     : " << pp[1] << endl;
+    cout << "y minimum     : " << pp[2] << endl;
+    cout << "y maximum     : " << pp[3] << endl;
     cout << "panjang x : " << pp[1] - pp[0] << endl;
     cout << "lebar  y  : " << pp[3] - pp[2] << endl;
 }
@@ -35,7 +35,7 @@ int main()
     printPP(pp3);
     cin.ignore();
     
-    cout << endl << "Membuat persegi panjang 4: " << endl;
+    cout << endl << "Buat persegi panjang 4: " << endl;
     PersegiPanjang pp4(-2, -2, 3, 2);
     printPP(pp4);
     cin.ignore();
