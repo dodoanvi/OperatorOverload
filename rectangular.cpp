@@ -3,7 +3,7 @@
 #include "include/rectangular.hpp"
 
 
-void persegiPanjang::output()
+void persegiPanjang::output(){
     float length = this->x_maks - this->x_min; length = abs(length);
     float width   = this->y_maks - this->y_min; width   = abs (width);
     std::cout << "Titik tengah x   : " << (this->x_maks - this->x_min)/2 + this->x_min; std::cout << std::endl;
