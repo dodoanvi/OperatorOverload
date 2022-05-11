@@ -10,10 +10,10 @@ void persegiPanjang::output(){
     std::cout << "Titik tengah y   : " << (this->y_maks - this->y_min)/2 + this->y_min; std::cout << std::endl;
     std::cout << "Panjang          : " << length; std::cout << std::endl;
     std::cout << "Lebar            : " << width; std::cout << std::endl;
-    std::cout << "Nilai x_min      : " << this->x_min; std::cout << std::endl;
-    std::cout << "Nilai x_max      : " << this->x_maks; std::cout << std::endl;
-    std::cout << "Nilai y_min      : " << this->y_min; std::cout << std::endl;
-    std::cout << "Nilai y_maks     : " << this->y_maks; std::cout << std::endl;
+    std::cout << "Nilai x_minimum      : " << this->x_min; std::cout << std::endl;
+    std::cout << "Nilai x_maximum      : " << this->x_maks; std::cout << std::endl;
+    std::cout << "Nilai y_minimum      : " << this->y_min; std::cout << std::endl;
+    std::cout << "Nilai y_maksimum     : " << this->y_maks; std::cout << std::endl;
 }
 
 
@@ -40,7 +40,7 @@ persegiPanjang persegiPanjang::operator-(persegiPanjang const &new_var){
         temp.x_maks = std::min(this-> x_maks,new_var.x_maks);
         temp.y_maks = std::min(this-> y_maks,new_var.y_maks);
     }else{
-        std::cout << "Kedua bangun tidak beririsan" << std::endl;
+        std::cout << "Kedua Persegi Panjang Tidak Beririsan" << std::endl;
     }
     return temp;
 }
